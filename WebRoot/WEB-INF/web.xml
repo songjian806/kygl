@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_1487209801049">
+  <!-- 过滤器设置 -->
+  <filter>
+<filter-name>Set Character Encoding</filter-name>
+<filter-class>com.keyan.tool.SetCharacterEncodingFilter</filter-class>
+<init-param>
+<param-name>encoding</param-name>
+<param-value>UTF-8</param-value>
+</init-param>
+<init-param>
+<param-name>ignore</param-name>
+<param-value>true</param-value>
+</init-param>
+</filter>
+<filter-mapping>
+<filter-name>Set Character Encoding</filter-name>
+
+<url-pattern>/*</url-pattern>
+</filter-mapping>
+  
+  
+    	 <!--JSONRPC 组件-->
+	  <servlet>
+	    <servlet-name>com.metaparadigm.jsonrpc.JSONRPCServlet</servlet-name>
+	    <servlet-class>com.metaparadigm.jsonrpc.JSONRPCServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>com.metaparadigm.jsonrpc.JSONRPCServlet</servlet-name>
+	    <url-pattern>/JSON-RPC</url-pattern>
+	  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+     <display-name>ActiveMQ Web Demos</display-name>
+    <description>
+    Apache ActiveMQ Web Demos
+    </description>
+
+    <!-- context config -->
+    <context-param id="ParamValue_1487386223754">
+        <param-name>org.apache.activemq.brokerURL</param-name>
+        <param-value>vm://localhost</param-value>
+
+    </context-param>
+
+    <context-param id="ParamValue_1487386224490">
+        <param-name>org.apache.activemq.embeddedBroker</param-name>
+        <param-value>true</param-value>
+       
+    </context-param>
+
+    <!-- servlet mappings -->
+    
+    <!-- the subscription REST servlet -->
+    <servlet>
+        <servlet-name>AjaxServlet</servlet-name>
+        <servlet-class>org.apache.activemq.web.AjaxServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>MessageServlet</servlet-name>
+        <servlet-class>org.apache.activemq.web.MessageServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+        <!--
+        Uncomment this parameter if you plan to use multiple consumers over REST
+        <init-param>
+                <param-name>destinationOptions</param-name>
+                <param-value>consumer.prefetchSize=1</param-value>
+        </init-param> 
+        -->
+
+    </servlet>
+
+    <!-- the queue browse servlet -->
+    <servlet>
+        <servlet-name>QueueBrowseServlet</servlet-name>
+        <servlet-class>org.apache.activemq.web.QueueBrowseServlet</servlet-class>
+    </servlet>
+
+    <!-- servlets for the portfolio demo -->
+    <servlet>
+        <servlet-name>PortfolioPublishServlet</servlet-name>
+        <servlet-class>org.apache.activemq.web.PortfolioPublishServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AjaxServlet</servlet-name>
+        <url-pattern>/amq/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MessageServlet</servlet-name>
+        <url-pattern>/message/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>QueueBrowseServlet</servlet-name>
+        <url-pattern>/queueBrowse/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>PortfolioPublishServlet</servlet-name>
+        <url-pattern>/portfolioPublish</url-pattern>
+    </servlet-mapping>
+<!-- 过滤器 -->
+    <filter>
+      <filter-name>session</filter-name>
+      <filter-class>org.apache.activemq.web.SessionFilter</filter-class>
+    </filter>
+    
+    <filter-mapping>
+      <filter-name>session</filter-name>
+      <url-pattern>/*</url-pattern>
+    </filter-mapping>
+  
+</web-app>
+

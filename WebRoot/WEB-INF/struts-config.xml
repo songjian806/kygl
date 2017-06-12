@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+    <data-sources />
+    <form-beans>
+
+        <form-bean name="loginForm"
+                   type="com.keyan.struts.form.BgLoginForm" />
+        <form-bean name="userForm"
+                   type="com.keyan.struts.form.UserForm" />
+        <form-bean name="shenpi1From"
+                   type="com.keyan.struts.form.Shenpi1From" />
+        <form-bean name="xmglForm"
+                   type="com.keyan.struts.form.XmglForm" />
+        <form-bean name="thesisForm"
+                   type="com.keyan.struts.form.ThesisForm" />
+        <form-bean name="workForm"
+                   type="com.keyan.struts.form.WorkForm" />
+        <form-bean name="projectcgForm"
+                   type="com.keyan.struts.form.ProjectcgForm" />
+        <form-bean name="zhuanliForm"
+                   type="com.keyan.struts.form.ZhuanliForm" />
+        <form-bean name="xmgl1Form"
+                   type="com.keyan.struts.form.Xmgl1Form" />
+        <form-bean name="ggForm" type="com.keyan.struts.form.GgForm" />
+        <form-bean name="geSearchForm"
+                   type="com.keyan.struts.form.GeSearchForm" />
+        <form-bean name="infoForm"
+                   type="com.keyan.struts.form.InfoForm" />
+        <form-bean name="project1form"
+                   type="com.keyan.struts.form.Project1Form" />
+        <form-bean name="Pppeopleform"
+                   type="com.keyan.struts.form.PppeopleForm" />
+        <form-bean name="piciform"
+                   type="com.keyan.struts.form.PiciForm" />
+        <form-bean name="tongjiForm"
+                   type="com.keyan.struts.form.TongjiForm" />
+        <form-bean name="jigouForm"
+                   type="com.keyan.struts.form.JigouForm" />
+        <form-bean name="meetingForm"
+                   type="com.keyan.struts.form.MeetingForm" />
+        <form-bean name="modeForm"
+                   type="com.keyan.struts.form.ModeForm" />
+
+
+    </form-beans>
+
+    <global-exceptions />
+    <global-forwards />
+    <action-mappings>
+
+        <action attribute="loginForm" input="/login.jsp"
+                name="loginForm" parameter="method" path="/login" scope="request"
+                type="com.keyan.struts.action.LoginAction">
+            <forward name="failure" path="/login.jsp" />
+            <forward name="success" path="/index.jsp" />
+            <forward name="main" path="/index.jsp" />
+        </action>
+
+
+
+        <action  input="/top.jsp"
+                 parameter="method" path="/logout" scope="request"
+                 type="com.keyan.struts.action.LogoutAction">
+            <forward name="failure" path="/login.jsp" />
+            <forward name="logout" path="/login.jsp" />
+        </action>
+
+
+        <action  input="/left.jsp"
+                 parameter="method" path="/home" scope="request"
+                 type="com.keyan.struts.action.HomeAction">
+            <forward name="failure" path="/login.jsp" />
+            <forward name="home" path="/index.jsp" />
+        </action>
+
+
+        <action attribute="userForm" name="userForm" parameter="method"
+                path="/user" scope="request"
+                type="com.keyan.struts.action.UserAction">
+            <forward name="fail1" path="/fail.jsp" redirect="true"></forward>
+            <forward name="query" path="/userList.jsp"></forward>
+            <forward name="query1" path="/userList1.jsp"></forward>
+            <forward name="updateuser" path="/updateuser.jsp"></forward>
+            <forward name="updateuser1" path="/updateuser1.jsp"></forward>
+            <forward name="adduser" path="/adduser.jsp"></forward>
+        </action>
+
+        <action attribute="shenpi1From" input="/shenpi1.jsp"
+                name="shenpi1From" parameter="method" path="/shenpi1" scope="request"
+                type="com.keyan.struts.action.Shenpi1Action">
+            <forward name="shenpi1" path="/shenpi1.jsp" />
+
+        </action>
+
+        <action attribute="xmglForm" name="xmglForm" parameter="method"
+                path="/xmgl" scope="request"
+                type="com.keyan.struts.action.XmglAction">
+            <forward name="xiangmu" path="/xmguanli.jsp" />
+        </action>
+
+        <action attribute="thesisForm" input="/thesis.jsp"
+                name="thesisForm" parameter="method" path="/thesis" scope="request"
+                type="com.keyan.struts.action.ThesisAction">
+            <forward name="query1" path="/thesis.jsp"></forward>
+            <forward name="detele" path="/thesis.jsp" ></forward>
+            <forward name="add" path="/thesis.jsp" ></forward>
+            <forward name="query2" path="/updatethesis.jsp"></forward>
+            <forward name="queryinfo" path="/infoThesis.jsp"></forward>
+            <forward name="logout" path="/login.jsp"></forward>
+
+        </action>
+
+        <action attribute="workForm" input="/work.jsp" name="workForm"
+                parameter="method" path="/work" scope="request"
+                type="com.keyan.struts.action.WorkAction">
+            <forward name="query1" path="/work.jsp"></forward>
+            <forward name="detele" path="/work.jsp"></forward>
+            <forward name="add" path="/work.jsp" ></forward>
+            <forward name="query2" path="/updatework.jsp"></forward>
+            <forward name="queryinfo" path="/infoWork.jsp"></forward>
+            <forward name="logout" path="/login.jsp"></forward>
+        </action>
+
+        <action attribute="projectcgForm" input="/projectcg.jsp"
+                name="projectcgForm" parameter="method" path="/projectcg"
+                scope="request" type="com.keyan.struts.action.ProjectcgAction">
+            <forward name="query1" path="/projectcg.jsp"></forward>
+            <forward name="detele" path="/projectcg.jsp"></forward>
+            <forward name="query2" path="/updateprojectcg.jsp"></forward>
+            <forward name="queryinfo" path="/infoProjectcg.jsp"></forward>
+            <forward name="logout" path="/login.jsp"></forward>
+        </action>
+
+        <action attribute="zhuanliForm" input="/zhuanli.jsp"
+                name="zhuanliForm" parameter="method" path="/zhuanli" scope="request"
+                type="com.keyan.struts.action.ZhuanliAction">
+            <forward name="query1" path="/zhuanli.jsp"></forward>
+            <forward name="detele" path="/zhuanli.jsp"></forward>
+            <forward name="query2" path="/updatezhuanli.jsp"></forward>
+            <forward name="queryinfo" path="/infoZhuanli.jsp"></forward>
+            <forward name="logout" path="/login.jsp"></forward>
+        </action>
+
+        <action attribute="xmgl1Form" name="xmgl1Form"
+                parameter="method" path="/xmgl1" scope="request"
+                type="com.keyan.struts.action.Xmgl1Action">
+            <forward name="xmgl1" path="/audit1.jsp" redirect="true" />
+        </action>
+
+        <action parameter="method" path="/shengxls"
+                type="com.keyan.struts.action.ShengxlsAction">
+            <set-property property="cancellable" value="true" />
+        </action>
+
+        <action parameter="method" path="/shengxls1"
+                type="com.keyan.struts.action.Shengxls1Action">
+            <set-property property="cancellable" value="true" />
+        </action>
+
+
+        <action parameter="method" path="/shengxls5"
+                type="com.keyan.struts.action.Shengxls5Action">
+            <set-property property="cancellable" value="true" />
+        </action>
+
+
+        <action parameter="method" path="/shengxls2"
+                type="com.keyan.struts.action.Shengxls2Action">
+            <set-property property="cancellable" value="true" />
+        </action>
+
+        <action parameter="method" path="/shengxls3"
+                type="com.keyan.struts.action.Shengxls3Action">
+            <set-property property="cancellable" value="true" />
+        </action>
+
+        <action attribute="ggForm" name="ggForm" parameter="method"
+                path="/gg" scope="request" type="com.keyan.struts.action.GgAction">
+            <forward name="fail1" path="/fail.jsp" redirect="true" />
+            <forward name="GgList" path="/GgList.jsp"  />
+        </action>
+
+        <action path="/xiazai" scope="request"
+                type="com.keyan.struts.action.XiazaiAction">
+            <forward name="fail1" path="/fail.jsp" redirect="true" />
+        </action>
+        <action attribute="geSearchForm" name="geSearchForm"
+                parameter="method" path="/geSearch" scope="request"
+                type="com.keyan.struts.action.GeSearchAction">
+            <forward name="query" path="/gerenchaxun.jsp" />
+            <forward name="geren" path="/geren.jsp"  />
+            <forward name="yuanxichaxun1" path="/yuanxichaxun1.jsp"  />
+            <forward name="yuanxichaxun" path="/yuanxichaxun.jsp"  />
+            <forward name="query1" path="/gerenchaxun1.jsp" />
+            <forward name="fail" path="/fail.jsp" redirect="true" />
+            <forward name="logout" path="/login.jsp"></forward>
+        </action>
+        <action attribute="infoForm" input="/fajian.jsp" name="infoForm"
+                parameter="method" path="/info" scope="request"
+                type="com.keyan.struts.action.InfoAction">
+            <forward name="fail1" path="/fail.jsp" redirect="true" />
+            <forward name="infoList" path="/inbox.jsp"  />
+            <forward name="query2" path="/inbox_send.jsp"  />
+            <forward name="logout" path="/login.jsp"></forward>
+        </action>
+        <action attribute="project1form" name="project1form"
+                input="/xmguanli.jsp" parameter="method" path="/project1"
+                scope="request" type="com.keyan.struts.action.Project1Action">
+            <forward name="logout" path="/login.jsp" />
+            <forward name="fail1" path="/fail1.jsp" />
+            <forward name="success1" path="/success.jsp" />
+            <forward name="xmguanli" path="/xmguanli.jsp" />
+            <forward name="xmguanli1" path="/xmguanli1.jsp" />
+            <forward name="lixiang" path="/lixiang.jsp" />
+            <forward name="zhongjian" path="/zhongjian.jsp" />
+            <forward name="jiexiang" path="/jiexiang.jsp" />
+            <forward name="yanqi" path="/yanqi.jsp" />
+            <forward name="zhongzhi" path="/zhongzhi.jsp" />
+            <forward name="addpeople" path="/addpeople.jsp" />
+            <forward name="updateproject1" path="/updateproject1.jsp" />
+        </action>
+
+        <action attribute="project1form" input="/xmguanli.jsp"
+                name="project1form" parameter="method" path="/project1form"
+                scope="request" type="com.keyan.struts.action.Project1Action">
+            <forward name="delete" path="/xmguanli.jsp"></forward>
+            <forward name="insert11" path="/xmguanli.jsp"></forward>
+            <forward name="query2" path="/updateproject1.jsp"></forward>
+            <forward name="query441" path="/presult.jsp"></forward>
+            <forward name="fail" path="/presult.jsp"></forward>
+            <forward name="logout" path="/login.jsp"></forward>
+        </action>
+
+        <action parameter="method" path="/Shengxls4"
+                type="com.keyan.struts.action.Shengxls4Action" />
+        <action attribute="Pppeopleform" input="/xmguanli.jsp"
+                name="Pppeopleform" parameter="method" path="/Pppeopleform"
+                scope="request" type="com.keyan.struts.action.PppeopleAction" >
+            <forward name="query" path="/chaxunpeople.jsp" />
+            <forward name="add" path="/addpeople.jsp" />
+            <forward name="updatepeople" path="/updatepeople.jsp" />
+            <forward name="logout" path="/login.jsp"></forward>
+        </action>
+        <action attribute="piciform" input="/addpici.jsp"
+                name="piciform" parameter="method" path="/Piciform" scope="request"
+                type="com.keyan.struts.action.PiciAction">
+            <forward name="query" path="/pici.jsp" />
+            <forward name="delete" path="/pici.jsp" />
+            <forward name="update" path="/updatepici.jsp" />
+            <forward name="update1" path="/pici.jsp" />
+            <forward name="addproject1" path="/addproject1.jsp" />
+            <forward name="logout" path="/login.jsp"></forward>
+        </action>
+        <action attribute="tongjiForm" name="tongjiForm"
+                parameter="method" path="/tongji" scope="request"
+                type="com.keyan.struts.action.TongjiAction">
+            <forward name="xiangmufenxishow"
+                     path="/xiangmufenxishow.jsp" />
+            <forward name="tongjiyuanxishow"
+                     path="/tongjiyuanxishow.jsp" />
+            <forward name="yuanxifenxishow" path="/yuanxifenxishow.jsp" />
+            <forward name="tongjinianshow" path="/tongjinianshow.jsp" />
+            <forward name="tongjigerenshow" path="/tongjigerenshow.jsp" />
+        </action>
+        <action attribute="jigouForm" input="/form/jigou.jsp"
+                name="jigouForm" parameter="method" path="/jigou" scope="request"
+                type="com.keyan.struts.action.JigouAction">
+            <forward name="deptList" path="/deptList.jsp" />
+            <forward name="keshiList" path="/keshiList.jsp" />
+        </action>
+        <action parameter="method" path="/jigouDD"
+                type="com.keyan.struts.action.JigouDDAction" />
+
+        <action attribute="meetingForm" input="/form/meeting.jsp"
+                name="meetingForm" parameter="method" path="/meeting" scope="request"
+                type="com.keyan.struts.action.MeetingAction">
+            <forward name="meetingList" path="/meetingList.jsp" />
+            <forward name="meetingList1" path="/meetingList1.jsp" />
+            <forward name="meetingQuery" path="/meetingQuery.jsp" />
+        </action>
+        <action parameter="method" path="/data" scope="request"
+                type="com.keyan.struts.action.DataAction">
+            <forward name="data" path="/data.jsp" redirect="true"></forward>
+            <forward name="huanyuan" path="/huanyuan.jsp" redirect="true"></forward>
+        </action>
+        <!--经费-->
+
+        <action attribute="modeForm" input="/mode.jsp"
+                name="modeForm" parameter="method" path="/mode" scope="request"
+                type="com.keyan.struts.action.ModeAction">
+            <forward name="query120" path="/mode.jsp"></forward>
+            <forward name="detele" path="/mode.jsp" ></forward>
+            <forward name="add" path="/addMode.jsp" ></forward>
+            <forward name="insert" path="/mode.jsp" ></forward>
+            <forward name="query2" path="/updatemode.jsp"></forward>
+            <forward name="logout" path="/login.jsp"></forward>
+        </action>
+
+    </action-mappings>
+
+    <message-resources
+            parameter="com.yourcompany.struts.ApplicationResources" />
+</struts-config>
+

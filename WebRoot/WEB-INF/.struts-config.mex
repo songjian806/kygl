@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/login.do" location="50,50" dimension="256,84" />
+  <StrutsActivity path="/logout.do" location="2750,1550" dimension="257,104" />
+  <StrutsActivity path="/home.do" location="350,2350" dimension="257,104" />
+  <StrutsActivity path="/user.do" location="1550,1050" dimension="226,96" />
+  <StrutsActivity path="/shenpi1.do" location="650,250" dimension="268,84" />
+  <StrutsActivity path="/xmgl.do" location="345,345" dimension="250,84" />
+  <StrutsActivity path="/thesis.do" location="50,550" dimension="262,84" />
+  <StrutsActivity path="/work.do" location="950,650" dimension="250,84" />
+  <StrutsActivity path="/projectcg.do" location="50,850" dimension="280,84" />
+  <StrutsActivity path="/zhuanli.do" location="1250,150" dimension="268,84" />
+  <StrutsActivity path="/xmgl1.do" location="1250,650" dimension="250,84" />
+  <StrutsActivity path="/shengxls.do" location="1250,850" dimension="256,84" />
+  <StrutsActivity path="/shengxls1.do" location="950,1050" dimension="280,84" />
+  <StrutsActivity path="/shengxls5.do" location="950,2050" dimension="274,104" />
+  <StrutsActivity path="/shengxls2.do" location="1550,1250" dimension="255,96" />
+  <StrutsActivity path="/shengxls3.do" location="650,1350" dimension="280,84" />
+  <StrutsActivity path="/gg.do" location="650,950" dimension="238,84" />
+  <StrutsActivity path="/xiazai.do" location="50,1050" dimension="262,84" />
+  <StrutsActivity path="/geSearch.do" location="50,1250" dimension="274,84" />
+  <StrutsActivity path="/info.do" location="1550,350" dimension="224,96" />
+  <StrutsActivity path="/project1.do" location="50,1450" dimension="274,84" />
+  <StrutsActivity path="/project1form.do" location="1550,1550" dimension="274,84" />
+  <StrutsActivity path="/Shengxls4.do" location="950,1550" dimension="280,84" />
+  <StrutsActivity path="/Pppeopleform.do" location="50,1650" dimension="274,84" />
+  <StrutsActivity path="/Piciform.do" location="650,1650" dimension="250,84" />
+  <StrutsActivity path="/tongji.do" location="1850,250" dimension="262,84" />
+  <StrutsActivity path="/jigou.do" location="2150,1250" dimension="256,84" />
+  <StrutsActivity path="/jigouDD.do" location="2150,450" dimension="268,84" />
+  <StrutsActivity path="/meeting.do" location="2150,1550" dimension="268,84" />
+  <StrutsActivity path="/data.do" location="50,1850" dimension="244,84" />
+  <StrutsActivity path="/mode.do" location="350,1950" dimension="251,104" />
+  <StrutsActivity path="/login.jsp" location="650,150" dimension="100,48" />
+  <StrutsActivity path="/index.jsp" location="950,450" dimension="100,48" />
+  <StrutsActivity path="/top.jsp" location="2750,1350" dimension="77,53" />
+  <StrutsActivity path="/left.jsp" location="2150,2250" dimension="75,53" />
+  <StrutsActivity path="/updateuser1.jsp" location="1550,2450" dimension="130,53" />
+  <StrutsActivity path="/userList.jsp" location="2750,1150" dimension="101,53" />
+  <StrutsActivity path="/fail.jsp" location="650,1250" dimension="94,48" />
+  <StrutsActivity path="/userList1.jsp" location="2750,350" dimension="108,53" />
+  <StrutsActivity path="/updateuser.jsp" location="1250,2450" dimension="123,53" />
+  <StrutsActivity path="/shenpi1.jsp" location="50,450" dimension="112,48" />
+  <StrutsActivity path="/xmguanli.jsp" location="50,350" dimension="118,48" />
+  <StrutsActivity path="/infoThesis.jsp" location="2150,650" dimension="115,53" />
+  <StrutsActivity path="/thesis.jsp" location="650,650" dimension="106,48" />
+  <StrutsActivity path="/updatethesis.jsp" location="950,550" dimension="142,48" />
+  <StrutsActivity path="/infoWork.jsp" location="2450,650" dimension="111,53" />
+  <StrutsActivity path="/work.jsp" location="50,750" dimension="94,48" />
+  <StrutsActivity path="/updatework.jsp" location="350,750" dimension="130,48" />
+  <StrutsActivity path="/infoProjectcg.jsp" location="2150,2050" dimension="133,53" />
+  <StrutsActivity path="/projectcg.jsp" location="650,850" dimension="124,48" />
+  <StrutsActivity path="/updateprojectcg.jsp" location="950,850" dimension="160,48" />
+  <StrutsActivity path="/infoZhuanli.jsp" location="350,2150" dimension="120,53" />
+  <StrutsActivity path="/zhuanli.jsp" location="1250,450" dimension="112,48" />
+  <StrutsActivity path="/updatezhuanli.jsp" location="1250,550" dimension="148,48" />
+  <StrutsActivity path="/audit1.jsp" location="650,750" dimension="106,48" />
+  <StrutsActivity path="/GgList.jsp" location="2450,2350" dimension="93,53" />
+  <StrutsActivity path="/yuanxichaxun1.jsp" location="2750,2350" dimension="140,53" />
+  <StrutsActivity path="/geren.jsp" location="950,950" dimension="100,48" />
+  <StrutsActivity path="/gerenchaxun.jsp" location="1550,550" dimension="136,48" />
+  <StrutsActivity path="/yuanxichaxun.jsp" location="50,2450" dimension="133,53" />
+  <StrutsActivity path="/infoList.jsp" location="950,2450" dimension="98,53" />
+  <StrutsActivity path="/fajian.jsp" location="1550,650" dimension="82,51" />
+  <StrutsActivity path="/lixiang.jsp" location="50,2250" dimension="94,53" />
+  <StrutsActivity path="/yanqi.jsp" location="2750,2150" dimension="88,53" />
+  <StrutsActivity path="/updateproject1.jsp" location="1850,1050" dimension="154,48" />
+  <StrutsActivity path="/addpeople.jsp" location="1550,2250" dimension="121,53" />
+  <StrutsActivity path="/jiexiang.jsp" location="2750,1950" dimension="101,53" />
+  <StrutsActivity path="/fail1.jsp" location="1550,1450" dimension="100,48" />
+  <StrutsActivity path="/zhongzhi.jsp" location="950,2250" dimension="109,53" />
+  <StrutsActivity path="/zhongjian.jsp" location="2750,1750" dimension="113,53" />
+  <StrutsActivity path="/xmguanli1.jsp" location="1550,2050" dimension="116,53" />
+  <StrutsActivity path="/success.jsp" location="950,50" dimension="112,48" />
+  <StrutsActivity path="/projectxx.jsp" location="650,1550" dimension="124,48" />
+  <StrutsActivity path="/presult.jsp" location="1850,550" dimension="112,48" />
+  <StrutsActivity path="/chaxunpeople.jsp" location="2750,650" dimension="138,53" />
+  <StrutsActivity path="/updatepeople.jsp" location="1850,2250" dimension="139,53" />
+  <StrutsActivity path="/updatepici.jsp" location="1850,650" dimension="130,48" />
+  <StrutsActivity path="/pici.jsp" location="950,1750" dimension="94,48" />
+  <StrutsActivity path="/addproject1.jsp" location="1250,2250" dimension="128,53" />
+  <StrutsActivity path="/addpici.jsp" location="1250,1750" dimension="112,48" />
+  <StrutsActivity path="/xiangmufenxishow.jsp" location="2150,950" dimension="166,48" />
+  <StrutsActivity path="/tongjiyuanxishow.jsp" location="2150,1050" dimension="166,48" />
+  <StrutsActivity path="/yuanxifenxishow.jsp" location="2150,1150" dimension="160,48" />
+  <StrutsActivity path="/tongjigerenshow.jsp" location="950,1250" dimension="160,48" />
+  <StrutsActivity path="/tongjinianshow.jsp" location="1250,1250" dimension="154,48" />
+  <StrutsActivity path="/keshiList.jsp" location="2150,850" dimension="124,48" />
+  <StrutsActivity path="/deptList.jsp" location="1850,1450" dimension="118,48" />
+  <StrutsActivity path="/form/jigou.jsp" location="2150,1450" dimension="130,48" />
+  <StrutsActivity path="/meetingList.jsp" location="1550,1750" dimension="136,48" />
+  <StrutsActivity path="/meetingQuery.jsp" location="1850,750" dimension="142,48" />
+  <StrutsActivity path="/meetingList1.jsp" location="2150,1750" dimension="142,48" />
+  <StrutsActivity path="/form/meeting.jsp" location="1850,1750" dimension="142,48" />
+  <StrutsActivity path="/huanyuan.jsp" location="350,1850" dimension="118,48" />
+  <StrutsActivity path="/data.jsp" location="650,1850" dimension="94,48" />
+  <StrutsActivity path="/mode.jsp" location="1250,1850" dimension="91,53" />
+  <StrutsActivity path="/updatemode.jsp" location="2150,1850" dimension="132,53" />
+  <StrutsActivity path="fail.jsp" location="1250,1350" dimension="64,51" />
+  <StrutsActivity path="/bgLogin.jsp" location="950,150" dimension="112,48" />
+  <StrutsActivity path="/pfind1.jsp" location="1850,950" dimension="106,48" />
+  <StrutsActivity path="/pppeople.jsp" location="1850,850" dimension="118,48" />
+  <StrutsActivity path="/main.jsp" location="350,250" dimension="94,48" />
+  <StrutsActivity path="/shenqing.jsp" location="50,250" dimension="118,48" />
+  <StrutsActivity path="/failure.jsp" location="650,50" dimension="112,48" />
+  <StrutsActivity path="/shenqi.jsp" location="650,450" dimension="106,48" />
+  <StrutsActivity path="thesis.jsp" location="650,550" dimension="100,48" />
+  <StrutsActivity path="/project1.jsp" location="650,1150" dimension="118,48" />
+  <StrutsActivity path="/projectxxu.jsp" location="1850,1150" dimension="130,48" />
+  <StrutsActivity path="/Login.jsp" location="950,1850" dimension="109,56" />
+  <StrutsActivity path="/form/mode.jsp" location="1550,1850" dimension="124,53" />
+  <StrutsActivity path="/.jsp" location="2450,850" dimension="57,53" />
+  <StrutsActivity path="/modework.jsp" location="2450,1050" dimension="120,53" />
+  <StrutsActivity path="/modeework.jsp" location="2450,1750" dimension="127,53" />
+  <StrutsActivity path="/ework.jsp" location="1850,1850" dimension="93,53" />
+  <StrutsActivity path="/update.jsp" location="2450,1950" dimension="98,53" />
+  <StrutsActivity path="/gerenchaxun1.jsp" location="50,2050" dimension="138,53" />
+  <StrutsActivity path="/infothesis.jsp" location="1550,2050" dimension="112,53" />
+  <StrutsActivity path="/infowork.jsp" location="1850,2050" dimension="108,53" />
+  <StrutsActivity path="/infoThesis    .jsp" location="650,2150" dimension="131,53" />
+  <StrutsActivity path="/addThesis.jsp" location="2450,2150" dimension="116,53" />
+  <StrutsActivity path="/updatepassword.jsp" location="2750,950" dimension="155,53" />
+  <StrutsTransition id="/user.do,updateuser1,/updateuser1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,1098" />
+      <AbsolutePoint location="1479,1098" />
+      <AbsolutePoint location="1479,1865" />
+      <AbsolutePoint location="1533,1865" />
+      <AbsolutePoint location="1533,2476" />
+      <AbsolutePoint location="1550,2476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/left.jsp,null,/home.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2187,2303" />
+      <AbsolutePoint location="2187,2416" />
+      <AbsolutePoint location="607,2416" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mode.do,query120,/mode.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="475,2002" />
+      <AbsolutePoint location="1295,1876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gg.do,GgList,/GgList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="888,1013" />
+      <AbsolutePoint location="2622,1013" />
+      <AbsolutePoint location="2622,2376" />
+      <AbsolutePoint location="2543,2376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/top.jsp,null,/logout.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2788,1403" />
+      <AbsolutePoint location="2788,1550" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/geSearch.do,query1,/gerenchaxun1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="187,1292" />
+      <AbsolutePoint location="119,2076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/meeting.do,meetingList,/meetingList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2221,1634" />
+      <AbsolutePoint location="2221,1665" />
+      <AbsolutePoint location="1618,1665" />
+      <AbsolutePoint location="1618,1750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/meeting.jsp,null,/meeting.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1921,1750" />
+      <AbsolutePoint location="1921,1562" />
+      <AbsolutePoint location="2150,1562" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xmguanli.jsp,null,/project1form.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="131,398" />
+      <AbsolutePoint location="131,436" />
+      <AbsolutePoint location="1237,436" />
+      <AbsolutePoint location="1237,1592" />
+      <AbsolutePoint location="1550,1592" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/meeting.do,meetingList1,/meetingList1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2277,1634" />
+      <AbsolutePoint location="2277,1750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/tongji.do,yuanxifenxishow,/yuanxifenxishow.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2112,292" />
+      <AbsolutePoint location="2592,292" />
+      <AbsolutePoint location="2592,1174" />
+      <AbsolutePoint location="2310,1174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,yanqi,/yanqi.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="217,1450" />
+      <AbsolutePoint location="217,1365" />
+      <AbsolutePoint location="-522,1365" />
+      <AbsolutePoint location="-522,2339" />
+      <AbsolutePoint location="2794,2339" />
+      <AbsolutePoint location="2794,2203" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jigou.do,deptList,/deptList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2150,1292" />
+      <AbsolutePoint location="1909,1292" />
+      <AbsolutePoint location="1909,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/geSearch.do,gerenchaxun1,/gerenchaxun1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="324,1252" />
+      <AbsolutePoint location="341,1252" />
+      <AbsolutePoint location="341,2076" />
+      <AbsolutePoint location="188,2076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1form.do,insert11,/xmguanli.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1693,1634" />
+      <AbsolutePoint location="1693,2539" />
+      <AbsolutePoint location="-1,2539" />
+      <AbsolutePoint location="-1,374" />
+      <AbsolutePoint location="50,374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,success,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="181,134" />
+      <AbsolutePoint location="181,213" />
+      <AbsolutePoint location="1000,213" />
+      <AbsolutePoint location="1000,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/work.do,detele,/work.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1075,734" />
+      <AbsolutePoint location="1075,813" />
+      <AbsolutePoint location="97,813" />
+      <AbsolutePoint location="97,798" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/geSearch.do,fail,/fail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="324,1313" />
+      <AbsolutePoint location="697,1313" />
+      <AbsolutePoint location="697,1298" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1form.do,fail,/presult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1820,1550" />
+      <AbsolutePoint location="1820,574" />
+      <AbsolutePoint location="1850,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zhuanli.do,queryinfo,/infoZhuanli.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1384,192" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user.do,query1,/userList1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1663,1098" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/fajian.jsp,null,/info.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1632,675" />
+      <AbsolutePoint location="1701,675" />
+      <AbsolutePoint location="1701,446" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/meeting.do,meetingQuery,/meetingQuery.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2418,1592" />
+      <AbsolutePoint location="2682,1592" />
+      <AbsolutePoint location="2682,774" />
+      <AbsolutePoint location="1992,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addpici.jsp,null,/Piciform.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1306,1798" />
+      <AbsolutePoint location="1306,1818" />
+      <AbsolutePoint location="775,1818" />
+      <AbsolutePoint location="775,1734" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/shenpi1.do,shenpi1,/shenpi1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,283" />
+      <AbsolutePoint location="610,283" />
+      <AbsolutePoint location="610,474" />
+      <AbsolutePoint location="162,474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zhuanli.do,query1,/zhuanli.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1336,234" />
+      <AbsolutePoint location="1336,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xmgl.do,xiangmu,/xmguanli.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="345,374" />
+      <AbsolutePoint location="168,374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/thesis.jsp,null,/thesis.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,652" />
+      <AbsolutePoint location="211,652" />
+      <AbsolutePoint location="211,634" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/thesis.do,add,/thesis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="312,613" />
+      <AbsolutePoint location="703,613" />
+      <AbsolutePoint location="703,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mode.do,query2,/updatemode.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="601,2032" />
+      <AbsolutePoint location="2216,2032" />
+      <AbsolutePoint location="2216,1903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/projectcg.do,queryinfo,/infoProjectcg.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="190,892" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user.do,query,/userList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1776,1118" />
+      <AbsolutePoint location="2800,1118" />
+      <AbsolutePoint location="2800,1150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zhuanli.do,query2,/updatezhuanli.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1383,234" />
+      <AbsolutePoint location="1383,550" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/geSearch.do,yuanxichaxun,/yuanxichaxun.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1292" />
+      <AbsolutePoint location="-53,1292" />
+      <AbsolutePoint location="-53,2476" />
+      <AbsolutePoint location="50,2476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,failure,/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="213,134" />
+      <AbsolutePoint location="213,152" />
+      <AbsolutePoint location="650,152" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user.do,updateuser,/updateuser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,1068" />
+      <AbsolutePoint location="1419,1068" />
+      <AbsolutePoint location="1419,2476" />
+      <AbsolutePoint location="1373,2476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/projectcg.do,detele,/projectcg.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="330,874" />
+      <AbsolutePoint location="650,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mode.do,detele,/mode.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="505,2054" />
+      <AbsolutePoint location="505,2219" />
+      <AbsolutePoint location="1265,2219" />
+      <AbsolutePoint location="1265,1903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,updateproject1,/updateproject1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="187,1492" />
+      <AbsolutePoint location="1927,1074" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,zhongjian,/zhongjian.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="157,1534" />
+      <AbsolutePoint location="157,1613" />
+      <AbsolutePoint location="915,1613" />
+      <AbsolutePoint location="915,1722" />
+      <AbsolutePoint location="2806,1722" />
+      <AbsolutePoint location="2806,1750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jigou.do,keshiList,/keshiList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2391,1250" />
+      <AbsolutePoint location="2391,874" />
+      <AbsolutePoint location="2274,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,xmguanli,/xmguanli.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1492" />
+      <AbsolutePoint location="-297,1492" />
+      <AbsolutePoint location="-297,435" />
+      <AbsolutePoint location="87,435" />
+      <AbsolutePoint location="87,398" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/tongji.do,xiangmufenxishow,/xiangmufenxishow.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2079,334" />
+      <AbsolutePoint location="2079,974" />
+      <AbsolutePoint location="2150,974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zhuanli.do,detele,/zhuanli.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1306,234" />
+      <AbsolutePoint location="1306,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.jsp,null,/login.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="678,150" />
+      <AbsolutePoint location="678,113" />
+      <AbsolutePoint location="306,113" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/work.do,add,/work.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1107,650" />
+      <AbsolutePoint location="1107,-75" />
+      <AbsolutePoint location="-135,-75" />
+      <AbsolutePoint location="-135,774" />
+      <AbsolutePoint location="50,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/thesis.do,query2,/updatethesis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="181,550" />
+      <AbsolutePoint location="181,541" />
+      <AbsolutePoint location="1022,541" />
+      <AbsolutePoint location="1022,550" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/tongji.do,tongjinianshow,/tongjinianshow.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2112,322" />
+      <AbsolutePoint location="2433,322" />
+      <AbsolutePoint location="2433,1365" />
+      <AbsolutePoint location="1329,1365" />
+      <AbsolutePoint location="1329,1298" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/shenpi1.jsp,null,/shenpi1.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,474" />
+      <AbsolutePoint location="-75,474" />
+      <AbsolutePoint location="-75,313" />
+      <AbsolutePoint location="650,313" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Pppeopleform.do,updatepeople,/updatepeople.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="187,1692" />
+      <AbsolutePoint location="1919,2276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/info.do,fail1,/fail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1761,446" />
+      <AbsolutePoint location="1761,965" />
+      <AbsolutePoint location="1449,965" />
+      <AbsolutePoint location="1449,1313" />
+      <AbsolutePoint location="727,1313" />
+      <AbsolutePoint location="727,1298" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/data.do,data,/data.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="294,1921" />
+      <AbsolutePoint location="697,1921" />
+      <AbsolutePoint location="697,1898" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gg.do,fail1,/fail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="783,1034" />
+      <AbsolutePoint location="783,1274" />
+      <AbsolutePoint location="744,1274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,addpeople,/addpeople.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,1450" />
+      <AbsolutePoint location="165,1341" />
+      <AbsolutePoint location="1455,1341" />
+      <AbsolutePoint location="1455,2276" />
+      <AbsolutePoint location="1550,2276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,jiexiang,/jiexiang.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="187,1450" />
+      <AbsolutePoint location="187,1395" />
+      <AbsolutePoint location="640,1395" />
+      <AbsolutePoint location="640,2579" />
+      <AbsolutePoint location="2712,2579" />
+      <AbsolutePoint location="2712,1976" />
+      <AbsolutePoint location="2750,1976" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/work.jsp,null,/work.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="97,750" />
+      <AbsolutePoint location="97,713" />
+      <AbsolutePoint location="-45,713" />
+      <AbsolutePoint location="-45,-45" />
+      <AbsolutePoint location="1167,-45" />
+      <AbsolutePoint location="1167,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Piciform.do,update1,/pici.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="835,1734" />
+      <AbsolutePoint location="835,2759" />
+      <AbsolutePoint location="2367,2759" />
+      <AbsolutePoint location="2367,2002" />
+      <AbsolutePoint location="1194,2002" />
+      <AbsolutePoint location="1194,1774" />
+      <AbsolutePoint location="1044,1774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,logout,/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="187,1492" />
+      <AbsolutePoint location="700,174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/work.do,queryinfo,/infoWork.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1075,692" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/projectcg.jsp,null,/projectcg.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="771,850" />
+      <AbsolutePoint location="771,613" />
+      <AbsolutePoint location="2361,613" />
+      <AbsolutePoint location="2361,1213" />
+      <AbsolutePoint location="30,1213" />
+      <AbsolutePoint location="30,922" />
+      <AbsolutePoint location="50,922" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/thesis.do,query1,/thesis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="159,634" />
+      <AbsolutePoint location="159,713" />
+      <AbsolutePoint location="681,713" />
+      <AbsolutePoint location="681,698" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/geSearch.do,yuanxichaxun1,/yuanxichaxun1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1306" />
+      <AbsolutePoint location="36,1306" />
+      <AbsolutePoint location="36,2310" />
+      <AbsolutePoint location="2820,2310" />
+      <AbsolutePoint location="2820,2350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,lixiang,/lixiang.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1522" />
+      <AbsolutePoint location="-447,1522" />
+      <AbsolutePoint location="-447,2276" />
+      <AbsolutePoint location="50,2276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/home.do,home,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="478,2402" />
+      <AbsolutePoint location="1000,474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/work.do,query1,/work.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1137,650" />
+      <AbsolutePoint location="1137,-135" />
+      <AbsolutePoint location="327,-135" />
+      <AbsolutePoint location="327,774" />
+      <AbsolutePoint location="144,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logout.do,failure,/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2920,1550" />
+      <AbsolutePoint location="2920,113" />
+      <AbsolutePoint location="730,113" />
+      <AbsolutePoint location="730,150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Piciform.do,addproject1,/addproject1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="900,1662" />
+      <AbsolutePoint location="1369,1662" />
+      <AbsolutePoint location="1369,2250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1form.do,query441,/presult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1824,1592" />
+      <AbsolutePoint location="2049,1592" />
+      <AbsolutePoint location="2049,574" />
+      <AbsolutePoint location="1962,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zhuanli.jsp,null,/zhuanli.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1276,450" />
+      <AbsolutePoint location="1276,234" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/thesis.do,detele,/thesis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="181,634" />
+      <AbsolutePoint location="181,674" />
+      <AbsolutePoint location="650,674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Pppeopleform.do,query,/chaxunpeople.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="187,1692" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/geSearch.do,geren,/geren.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="319,1250" />
+      <AbsolutePoint location="319,1041" />
+      <AbsolutePoint location="1000,1041" />
+      <AbsolutePoint location="1000,998" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mode.do,add,/mode.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="601,1980" />
+      <AbsolutePoint location="1134,1980" />
+      <AbsolutePoint location="1134,1876" />
+      <AbsolutePoint location="1250,1876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Piciform.do,delete,/pici.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="805,1734" />
+      <AbsolutePoint location="805,1752" />
+      <AbsolutePoint location="950,1752" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/work.do,query2,/updatework.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1125,734" />
+      <AbsolutePoint location="1125,913" />
+      <AbsolutePoint location="415,913" />
+      <AbsolutePoint location="415,798" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,success1,/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="324,1525" />
+      <AbsolutePoint location="2652,1525" />
+      <AbsolutePoint location="2652,74" />
+      <AbsolutePoint location="1062,74" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,fail1,/fail1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="324,1495" />
+      <AbsolutePoint location="1550,1495" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1form.do,delete,/xmguanli.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1731,1634" />
+      <AbsolutePoint location="1731,1949" />
+      <AbsolutePoint location="-105,1949" />
+      <AbsolutePoint location="-105,413" />
+      <AbsolutePoint location="109,413" />
+      <AbsolutePoint location="109,398" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/home.do,failure,/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="607,2380" />
+      <AbsolutePoint location="1842,2380" />
+      <AbsolutePoint location="1842,241" />
+      <AbsolutePoint location="700,241" />
+      <AbsolutePoint location="700,198" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/projectxx.jsp,null,/project1.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1574" />
+      <AbsolutePoint location="187,1574" />
+      <AbsolutePoint location="187,1534" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Piciform.do,update,/updatepici.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="900,1662" />
+      <AbsolutePoint location="2019,1662" />
+      <AbsolutePoint location="2019,674" />
+      <AbsolutePoint location="1980,674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/tongji.do,tongjigerenshow,/tongjigerenshow.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1850,292" />
+      <AbsolutePoint location="945,292" />
+      <AbsolutePoint location="945,1274" />
+      <AbsolutePoint location="950,1274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xmgl1.do,xmgl1,/audit1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1375,734" />
+      <AbsolutePoint location="1375,774" />
+      <AbsolutePoint location="756,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xiazai.do,fail1,/fail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="312,1125" />
+      <AbsolutePoint location="525,1125" />
+      <AbsolutePoint location="525,1274" />
+      <AbsolutePoint location="650,1274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/projectcg.do,query1,/projectcg.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="330,913" />
+      <AbsolutePoint location="365,913" />
+      <AbsolutePoint location="365,1095" />
+      <AbsolutePoint location="903,1095" />
+      <AbsolutePoint location="903,874" />
+      <AbsolutePoint location="774,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/geSearch.do,query,/gerenchaxun.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="324,1274" />
+      <AbsolutePoint location="445,1274" />
+      <AbsolutePoint location="445,1465" />
+      <AbsolutePoint location="1533,1465" />
+      <AbsolutePoint location="1533,574" />
+      <AbsolutePoint location="1550,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user.do,fail1,/fail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1663,1098" />
+      <AbsolutePoint location="697,1274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/thesis.do,queryinfo,/infoThesis.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="181,592" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/mode.jsp,null,/mode.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1295,1903" />
+      <AbsolutePoint location="1295,2002" />
+      <AbsolutePoint location="601,2002" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,xmguanli1,/xmguanli1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1462" />
+      <AbsolutePoint location="-75,1462" />
+      <AbsolutePoint location="-75,2609" />
+      <AbsolutePoint location="1479,2609" />
+      <AbsolutePoint location="1479,2076" />
+      <AbsolutePoint location="1550,2076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1.do,zhongzhi,/zhongzhi.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="324,1465" />
+      <AbsolutePoint location="415,1465" />
+      <AbsolutePoint location="415,1782" />
+      <AbsolutePoint location="865,1782" />
+      <AbsolutePoint location="865,2276" />
+      <AbsolutePoint location="950,2276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/data.do,huanyuan,/huanyuan.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="294,1874" />
+      <AbsolutePoint location="350,1874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/tongji.do,tongjiyuanxishow,/tongjiyuanxishow.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2109,334" />
+      <AbsolutePoint location="2109,1074" />
+      <AbsolutePoint location="2150,1074" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logout.do,logout,/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2950,1550" />
+      <AbsolutePoint location="2950,-210" />
+      <AbsolutePoint location="837,-210" />
+      <AbsolutePoint location="837,174" />
+      <AbsolutePoint location="750,174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,main,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="183,134" />
+      <AbsolutePoint location="183,513" />
+      <AbsolutePoint location="1000,513" />
+      <AbsolutePoint location="1000,498" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/project1form.do,query2,/updateproject1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1824,1622" />
+      <AbsolutePoint location="2079,1622" />
+      <AbsolutePoint location="2079,1074" />
+      <AbsolutePoint location="2004,1074" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/projectcg.do,query2,/updateprojectcg.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,892" />
+      <AbsolutePoint location="30,892" />
+      <AbsolutePoint location="30,30" />
+      <AbsolutePoint location="1215,30" />
+      <AbsolutePoint location="1215,874" />
+      <AbsolutePoint location="1110,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Pppeopleform.do,add,/addpeople.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="301,1734" />
+      <AbsolutePoint location="301,2241" />
+      <AbsolutePoint location="1610,2241" />
+      <AbsolutePoint location="1610,2250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/jigou.jsp,null,/jigou.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2215,1450" />
+      <AbsolutePoint location="2215,1334" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/Piciform.do,query,/pici.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="900,1665" />
+      <AbsolutePoint location="1027,1665" />
+      <AbsolutePoint location="1027,1750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/xmguanli.jsp,null,/Pppeopleform.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,352" />
+      <AbsolutePoint location="-23,352" />
+      <AbsolutePoint location="-23,1692" />
+      <AbsolutePoint location="50,1692" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/info.do,infoList,/infoList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1723,446" />
+      <AbsolutePoint location="1723,835" />
+      <AbsolutePoint location="614,835" />
+      <AbsolutePoint location="614,2476" />
+      <AbsolutePoint location="950,2476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
