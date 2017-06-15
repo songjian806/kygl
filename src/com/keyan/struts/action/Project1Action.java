@@ -949,9 +949,9 @@ public class Project1Action extends Action {
 			if (keyanuser.getUserclasify().equals("0")) {
 				project1.setPstatus("终止");
 			} else if (keyanuser.getUserclasify().equals("1")) {
-				project1.setPstatus("null");
+				project1.setPstate3("立项11");
 			} else if (keyanuser.getUserclasify().equals("2")) {
-				project1.setPstatus("null");
+				project1.setPstate3("立项22");
 			}
 			project1Dao.update1(project1);
 
@@ -980,12 +980,12 @@ public class Project1Action extends Action {
 			project1 = project1Dao.queryId(new Integer(id));
 
 			if (keyanuser.getUserclasify().equals("2")) {
-				project1.setPstatus("立项");
-				project1.setPstate3("立项2");
+			//	project1.setPstatus("中检");
+				project1.setPstate3("中检22");
 			}
 			if (keyanuser.getUserclasify().equals("1")) {
-				project1.setPstatus("立项");
-				project1.setPstate3("立项2");
+			//	project1.setPstatus("中检");
+				project1.setPstate3("中检11");
 			}
 			if (keyanuser.getUserclasify().equals("0")) {
 				project1.setPstatus("延期");

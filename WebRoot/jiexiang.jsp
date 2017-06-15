@@ -343,13 +343,27 @@ window.open("chyuan.html","_blank","fullscreen=0,toolbar=0,location=0,menubar=0,
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
+
+              <div class="row">
+                  <div class="col-lg-12">
+                      <!--breadcrumbs start -->
+                      <ul class="breadcrumb">
+                          <li><a href="index.jsp"><i class="icon-home"></i>首页</a></li>
+                          <li class="active">项目管理</li>
+                          <li class="active">项目结项</li>
+
+                      </ul>
+                      <!--breadcrumbs end -->
+                  </div>
+              </div>
+
               <!-- page start-->
               <div class="row">
                   <div class="col-lg-12">
                       <section class="panel">
                           <header class="panel-heading">
-                          <strong>结项基本信息列表</strong>                         
-                          <button type="button" class="btn btn-primary" onclick="window.location.href='Shengxls4.do?method=project'">导出Excel</button>                                        
+                          <strong>结项基本信息列表</strong>
+                              <button type="button" class="btn btn-success btn-sm pull-right" onclick="window.location.href='Shengxls4.do?method=project'"><i class="icon-cloud-download">导出Excel</i></button>
                           </header>
                           <table class="table table-striped table-bordered" id="sample_1">
                           <thead>

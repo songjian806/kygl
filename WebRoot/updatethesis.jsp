@@ -334,6 +334,21 @@ level=keyanuser.getLevel();
 		</aside>
 		<section id="main-content">
           <section class="wrapper">
+
+			  <div class="row">
+				  <div class="col-lg-12">
+					  <!--breadcrumbs start -->
+					  <ul class="breadcrumb">
+						  <li><a href="index.jsp"><i class="icon-home"></i>首页</a></li>
+						  <li><a href="#">成果管理</a></li>
+						  <li><a href="thesis.jsp"> 论文管理</a></li>
+						  <li class="active">修改论文</li>
+
+					  </ul>
+					  <!--breadcrumbs end -->
+				  </div>
+			  </div>
+
             <div class="row">
               <div class="col-lg-12">
 			   <section class="panel">

@@ -305,6 +305,21 @@ level=keyanuser.getLevel();
    <section id="container" class="">
   	<section id="main-content">
           <section class="wrapper">
+
+              <div class="row">
+                  <div class="col-lg-12">
+                      <!--breadcrumbs start -->
+                      <ul class="breadcrumb">
+                          <li><a href="index.jsp"><i class="icon-home"></i>首页</a></li>
+                          <li>综合管理</li>
+                          <li> 消息管理</li>
+
+
+                      </ul>
+                      <!--breadcrumbs end -->
+                  </div>
+              </div>
+
               <!--mail inbox start-->
               <div class="mail-box">
                   <aside class="sm-side">

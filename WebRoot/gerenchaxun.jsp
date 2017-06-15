@@ -280,6 +280,21 @@ level=keyanuser.getLevel();
 		 </aside>
 	<section id="main-content">
           <section class="wrapper">
+
+			  <div class="row">
+			  <div class="col-lg-12">
+				  <!--breadcrumbs start -->
+				  <ul class="breadcrumb">
+					  <li><a href="index.jsp"><i class="icon-home"></i>首页</a></li>
+					  <li><a href="#">业绩考核</a></li>
+					  <li>个人业绩查询</li>
+
+
+				  </ul>
+				  <!--breadcrumbs end -->
+			  </div>
+		  </div>
+
           <section class="panel">
           
 		<form action="geSearch.do?method=query" method="post" name="searchForm">

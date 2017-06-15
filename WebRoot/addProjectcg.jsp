@@ -344,6 +344,21 @@ return true;
 		</aside>
 		<section id="main-content">
           <section class="wrapper">
+
+			  <div class="row">
+				  <div class="col-lg-12">
+					  <!--breadcrumbs start -->
+					  <ul class="breadcrumb">
+						  <li><a href="index.jsp"><i class="icon-home"></i>首页</a></li>
+						  <li><a href="#">成果管理</a></li>
+						  <li><a href="projectcg.jsp"> 项目管理</a></li>
+						  <li class="active">添加项目</li>
+
+					  </ul>
+					  <!--breadcrumbs end -->
+				  </div>
+			  </div>
+
             <div class="row">
               <div class="col-lg-12">
 			   <section class="panel">

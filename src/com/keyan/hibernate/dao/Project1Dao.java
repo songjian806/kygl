@@ -432,7 +432,7 @@ public class Project1Dao {
 			tx = session.beginTransaction();
 			if (userclasify.equals("2")) {
 				Query query = session
-						.createQuery("from Project1 where (pstatus='立项' and pstate3='立项1') or (pstatus='立项' and pstate3='立项2')");
+						.createQuery("from Project1 where (pstatus='立项' and pstate3='立项1') or (pstatus='立项' and pstate3='立项2')or (pstatus='立项' and pstate3='立项22')");
 				list = query.list();
 				query = null;
 			}
@@ -471,7 +471,7 @@ public class Project1Dao {
 			tx = session.beginTransaction();
 			if (userclasify.equals("2")) {
 				Query query = session
-						.createQuery("from Project1 where (pstatus='立项' and pstate3='立项1') or (pstatus='立项' and pstate3='立项2')");
+						.createQuery("from Project1 where (pstatus='立项' and pstate3='立项1') or (pstatus='立项' and pstate3='立项2')or (pstatus='立项' and pstate3='立项22')");
 				list = query.list();
 				query = null;
 			}

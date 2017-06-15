@@ -359,7 +359,7 @@
                             <strong>申报列表</strong>
                             <button type="button" class="btn btn-success btn-sm pull-right"
                                     onclick="window.location.href='Shengxls4.do?method=project'"><i
-                                    class="icon-cloud-download">导出excel</i></button>
+                                    class="icon-cloud-download">导出Excel</i></button>
 
                             <button class="btn btn-info btn-sm pull-right"
                                     onclick="window.location.href='Piciform.do?method=query'"><i

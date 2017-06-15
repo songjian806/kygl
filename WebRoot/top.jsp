@@ -4,7 +4,7 @@
                 <div  data-placement="right" class="icon-reorder tooltips"></div>
             </div>
             <!--logo start-->
-            <a href="#" class="logo">创杰管理<span>系统</span></a>
+            <a href="#" class="logo">铜陵学院<span>科研管理系统</span></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
@@ -27,9 +27,9 @@
                         </a>
                         <ul class="dropdown-menu extended logout">
                             <div class="log-arrow-up"></div>
-                            <li><a href="#"><i class=" icon-suitcase"></i>个人业绩</a></li>
-                            <li><a href="#"><i class="icon-cog"></i> 设置</a></li>
-                            <li><a href="#"><i class="icon-bell-alt"></i>个人信息</a></li>
+                            <li><a href="geSearch.do?method=query"><i class=" icon-suitcase"></i>个人业绩</a></li>
+                            <li><a href="#"><i class="icon-cog"></i>设置 </a></li>
+                            <li><a href="user.do?method=query00&&id=<%=keyanuser.getId().toString() %>"><i class="icon-bell-alt"></i>个人信息</a></li>
                             <li><a href="logout.do?method=exit"><i class="icon-key"></i>退出</a></li>
                         </ul>
                     </li>

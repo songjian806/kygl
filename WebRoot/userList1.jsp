@@ -284,6 +284,21 @@ level=keyanuser.getLevel();
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
+
+              <div class="row">
+                  <div class="col-lg-12">
+                      <!--breadcrumbs start -->
+                      <ul class="breadcrumb">
+                          <li><a href="index.jsp"><i class="icon-home"></i>首页</a></li>
+                          <li>个人信息</li>
+                          <li> 个人信息查看</li>
+
+
+                      </ul>
+                      <!--breadcrumbs end -->
+                  </div>
+              </div>
+
               <!-- page start-->
               <div class="row">
                   <aside class="profile-nav col-lg-3">

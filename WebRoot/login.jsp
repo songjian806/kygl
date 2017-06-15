@@ -19,7 +19,7 @@
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="img/favicon.html">
 
-    <title>创杰管理系统登陆</title>
+    <title>铜陵学院科研管理系统登陆</title>
 
     <%
         String s1 = (String) getServletContext().getAttribute("info1");
@@ -34,15 +34,23 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet"/>
 
+    <style>
+        body{
+            background: url("Image/beijing.jpg") no-repeat scroll center top  ;
+        }
+
+    </style>
+
 </head>
 
-<body class="login-body">
+<body  class="login-body">
 
 <div class="container">
-
+    <br><br><br><br><br><br><br>
     <form class="form-signin" action="login.do" method="post">
         <table>
-            <h2 class="form-signin-heading">创杰管理系统用户登陆</h2>
+
+
             <div class="login-wrap">
                 <div class="form-group">
 
@@ -90,20 +98,20 @@
 <script>
     var verifyCode = new GVerify("v_container");
     $(document).ready(function () {
-    	$("#btn_submit").click(function(){
-    		if(document.getElementById("code_input").value==""){
-    		$("#pwd").val("");
-    		alert("未输入验证码");
-    	}else{
-    	 var res = verifyCode.validate(document.getElementById("code_input").value);
-            if (res) {
-				
-            } else {
+        $("#btn_submit").click(function(){
+            if(document.getElementById("code_input").value==""){
                 $("#pwd").val("");
-                alert("验证码错误");
-            }}
-		});
-    	
+                alert("未输入验证码");
+            }else{
+                var res = verifyCode.validate(document.getElementById("code_input").value);
+                if (res) {
+
+                } else {
+                    $("#pwd").val("");
+                    alert("验证码错误");
+                }}
+        });
+
 
     });
 

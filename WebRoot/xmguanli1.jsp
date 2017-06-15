@@ -354,6 +354,7 @@
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
                         <li><a href="index.jsp"><i class="icon-home"></i>首页</a></li>
+                        <li class="active">项目管理</li>
                         <li class="active">项目申报</li>
 
                     </ul>
@@ -367,7 +368,7 @@
                         <header class="panel-heading">
                             <strong>申报基本信息列表</strong>
                             <button class="btn btn-success btn-sm pull-right"
-                                    onclick="javascript:window.location.href='shengxls1.do?method=thesis'"><i
+                                    onclick="window.location.href='Shengxls4.do?method=project'"><i
                                     class="icon-cloud-download">导出excel</i></button>
                             <%if (keyanuser.getUserclasify().equals("0")) {%>
                             <button class="btn btn-sm btn-info pull-right"

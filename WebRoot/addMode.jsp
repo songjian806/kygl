@@ -203,7 +203,7 @@
                     </ul>
                 </li>
 
-                <li class="sub-menu ">
+                <li class="sub-menu active">
                     <a href="javascript:;" class="">
                         <i class="icon-th"></i>
                         <span>经费管理</span>
@@ -211,18 +211,18 @@
                     </a>
                     <ul class="sub">
                         <%if (keyanuser.getUserclasify().equals("0")) { %>
-                        <li class=""><a class="" href="mode.do?method=query117">经费管理</a></li>
+                        <li class="active"><a class="" href="mode.do?method=query117">经费管理</a></li>
                         <%} %>
                         <%if (keyanuser.getUserclasify().equals("1")) { %>
-                        <li class=""><a class="" href="mode.do?method=query118">经费管理</a></li>
+                        <li class="active"><a class="" href="mode.do?method=query118">经费管理</a></li>
                         <%} %>
                         <%if (keyanuser.getUserclasify().equals("2")) { %>
-                        <li class=""><a class="" href="mode.do?method=query119">经费管理</a></li>
+                        <li class="active"><a class="" href="mode.do?method=query119">经费管理</a></li>
                         <%} %>
                     </ul>
                 </li>
 
-                <li class="sub-menu active">
+                <li class="sub-menu ">
                     <a href="javascript:;" class="">
                         <i class="icon-th"></i>
                         <span>综合管理</span>
@@ -326,6 +326,21 @@
     </aside>
     <section id="main-content">
         <section class="wrapper">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--breadcrumbs start -->
+                    <ul class="breadcrumb">
+                        <li><a href="index.jsp"><i class="icon-home"></i>首页</a></li>
+                        <li><a href="#">经费管理</a></li>
+                        <li><a href="mode.jsp"> 经费管理</a></li>
+                        <li class="active">添加经费</li>
+
+                    </ul>
+                    <!--breadcrumbs end -->
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-lg-12">
                     <section class="panel">

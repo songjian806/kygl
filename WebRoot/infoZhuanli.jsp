@@ -32,7 +32,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet"/>
 
-    <title>JSP for TeacherForm form</title>
+    <title>专利管理</title>
 
 
     <link rel="stylesheet" type="text/css" href="data/calendar.css">
@@ -335,6 +335,21 @@
     </aside>
     <section id="main-content">
         <section class="wrapper">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--breadcrumbs start -->
+                    <ul class="breadcrumb">
+                        <li><a href="index.jsp"><i class="icon-home"></i>首页</a></li>
+                        <li><a href="#">成果管理</a></li>
+                        <li><a href="zhuanli.jsp">专利管理</a></li>
+                        <li class="active">查看专利</li>
+
+                    </ul>
+                    <!--breadcrumbs end -->
+                </div>
+            </div>
+
             <!-- page start-->
 
             <div class="row">

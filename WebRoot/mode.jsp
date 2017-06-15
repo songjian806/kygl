@@ -312,7 +312,7 @@ level=keyanuser.getLevel();
                       <!--breadcrumbs start -->
                       <ul class="breadcrumb">
                           <li><a href="index.jsp"><i class="icon-home"></i>首页</a></li>
-                          <li><a href="#">综合管理</a></li>
+                          <li><a href="#">经费管理</a></li>
                           <li class="active">经费管理</li>
                         
                       </ul>
