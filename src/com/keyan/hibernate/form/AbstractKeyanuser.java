@@ -25,8 +25,17 @@ public abstract class AbstractKeyanuser implements java.io.Serializable {
 	private String unitnum;
 	private String Email;
 	private String deptnum;
+	private String checked;
 
 	// Constructors
+
+	public String getChecked() {
+		return checked;
+	}
+
+	public void setChecked(String checked) {
+		this.checked = checked;
+	}
 
 	public String getDeptnum() {
 		return deptnum;
@@ -44,7 +53,7 @@ public abstract class AbstractKeyanuser implements java.io.Serializable {
 	public AbstractKeyanuser(String password, String username,
 			String userclasify, String level, String userdept, String name,
 			String post, String postnum, String tel, String addr,
-			String unitnum, String Email) {
+			String unitnum, String Email,String checked) {
 		this.password = password;
 		this.username = username;
 		this.userclasify = userclasify;
@@ -57,7 +66,7 @@ public abstract class AbstractKeyanuser implements java.io.Serializable {
 		this.addr = addr;
 		this.unitnum = unitnum;
 		this.Email = Email;
-
+		this.checked = checked;
 	}
 
 	// Property accessors

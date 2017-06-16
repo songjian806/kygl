@@ -55,7 +55,7 @@ public class UserDAO {
 			tx.begin();
 			// 查询数据库的用户和密码，权限
 			Query query = session
-					.createQuery("from Keyanuser where username=? and password=? and userclasify=?");
+					.createQuery("from Keyanuser where username=? and password=? and userclasify=? and checked='1'");
 			query.setString(0, username);
 			query.setString(1, password);
 			query.setString(2, userType);

@@ -74,7 +74,12 @@
                 <div class="form-group">
                     <button class="btn btn-lg btn-success btn-block" id="btn_submit" type="submit">登陆</button>
                 </div>
-
+				<div class="registration">
+                	还没有账户?
+                <a class="" href="registration.jsp">
+                                                  创建一个账户
+                </a>
+            </div>
             </div>
         </table>
 
