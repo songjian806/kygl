@@ -26,7 +26,6 @@ public abstract class AbstractKeyanuser implements java.io.Serializable {
 	private String Email;
 	private String deptnum;
 	private String checked;
-
 	// Constructors
 
 	public String getChecked() {
@@ -66,7 +65,7 @@ public abstract class AbstractKeyanuser implements java.io.Serializable {
 		this.addr = addr;
 		this.unitnum = unitnum;
 		this.Email = Email;
-		this.checked = checked;
+this.checked=checked;
 	}
 
 	// Property accessors

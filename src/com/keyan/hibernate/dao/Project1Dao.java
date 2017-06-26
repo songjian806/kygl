@@ -549,11 +549,12 @@ public class Project1Dao {
 		Transaction tx = null;
 		List list = null;
 		try {
+			
 			session = HibernateSessionFactory.getSession();
 			tx = session.beginTransaction();
 			if (userclasify.equals("2")) {
 				Query query = session
-						.createQuery("from Project1 where (pstatus='中检' and pstate3='中检1') or (pstatus='中检' and pstate3='中检2')");
+						.createQuery("from Project1 where (pstatus='中检' and pstate3='中检1') or (pstatus='中检' and pstate3='中检2')or (pstatus='中检' and pstate3='中检22')");
 				list = query.list();
 				query = null;
 			}
@@ -636,7 +637,7 @@ public class Project1Dao {
 			tx = session.beginTransaction();
 			if (userclasify.equals("2")) {
 				Query query = session
-						.createQuery("from Project1 where (pstatus='结项' and pstate3='结项1') or (pstatus='结项' and pstate3='结项2')");
+						.createQuery("from Project1 where (pstatus='结项' and pstate3='结项1') or (pstatus='结项' and pstate3='结项2')or(pstatus='结项' and pstate3='结项22')");
 				list = query.list();
 				query = null;
 			}
@@ -717,7 +718,7 @@ public class Project1Dao {
 			tx = session.beginTransaction();
 			if (userclasify.equals("2")) {
 				Query query = session
-						.createQuery("from Project1 where (pstatus='延期' and pstate3='延期1') or (pstatus='延期' and pstate3='延期2')");
+						.createQuery("from Project1 where (pstatus='延期' and pstate3='延期1') or (pstatus='延期' and pstate3='延期2') or (pstatus='延期' and pstate3='延期22')");
 				list = query.list();
 				query = null;
 			}

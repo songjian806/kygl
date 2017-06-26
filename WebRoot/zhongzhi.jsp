@@ -439,9 +439,14 @@ window.open("chyuan.html","_blank","fullscreen=0,toolbar=0,location=0,menubar=0,
                                   	<%if(keyanuser.getUserclasify().equals("1")){
 											             if(project1.getPstate3().equals("系审通过")||project1.getPstate3().equals("校审通过")){
 											             %>
-														 <button class="btn btn-default btn-xs"><i class="icon-ok">通过</i></button>
-														 <button class="btn btn-default btn-xs"><i class="icon-remove">不通过</i></button>
-														 <%}
+														 <span class="label label-success"><i class="icon-ok">已通过</i></span>
+														 
+														 <%}else if(project1.getPstate3().equals("校审不通过")){
+														  %>
+														 <span class="label label-success"><i class="icon-ok">已通过</i></span>
+														 
+														 <%
+														 }
 											             else {
 											              %>
 											             <a href="project1.do?method=insert1151&&id=<%=project1.getPid().toString()%>"

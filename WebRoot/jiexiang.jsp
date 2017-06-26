@@ -402,7 +402,37 @@ window.open("chyuan.html","_blank","fullscreen=0,toolbar=0,location=0,menubar=0,
                                   <td align="center"><%=project1.getPcontrol() %></td>
 				  <td align="center"><%=project1.getUsernum() %></td>
                                   <td align="center">
-                                  <% if(project1.getPstate3().equals("结项1")){
+                                  <% 
+                                  
+                                  if(keyanuser.getUserclasify().equals("1")){
+                                  
+                                  if(project1.getPstate3().equals("结项1")){
+          out.print("系审通过");
+       }else if(project1.getPstate3().equals("结项2")){
+         out.print("系审通过");
+       }
+       else if(project1.getPstate3().equals("结项11")){
+         out.print("系审不通过");
+       }else if(project1.getPstate3().equals("结项22")){
+         out.print("系审通过");
+       }   else {out.print("未审核");}
+                                  
+                                  
+                                  }else if(keyanuser.getUserclasify().equals("2")){
+                                  
+                                  if(project1.getPstate3().equals("结项1")){
+          out.print("系审通过");
+       }else if(project1.getPstate3().equals("结项2")){
+         out.print("校审通过");
+       }
+     else if(project1.getPstate3().equals("结项22")){
+         out.print("校审不通过");
+       }else {out.print("未审核");}
+                               }else{
+                               
+                               
+                                
+                                  if(project1.getPstate3().equals("结项1")){
           out.print("系审通过");
        }else if(project1.getPstate3().equals("结项2")){
          out.print("校审通过");
@@ -411,8 +441,15 @@ window.open("chyuan.html","_blank","fullscreen=0,toolbar=0,location=0,menubar=0,
          out.print("系审不通过");
        }else if(project1.getPstate3().equals("结项22")){
          out.print("校审不通过");
-       }
-        else {out.print("未审核");}%></td>
+       }else {out.print("未审核");}
+                               
+                               
+                               
+                               }
+                                  
+                                  
+                                 
+        %></td>
                                   
                                   <td align="center">
                                   
@@ -463,7 +500,17 @@ window.open("chyuan.html","_blank","fullscreen=0,toolbar=0,location=0,menubar=0,
 															{%>
 														 <span class="label label-success"><i class="icon-ok">已通过</i></span>
 														 <%
-														}else{ %> 
+														}else if(project1.getPstate3().equals("结项22")){
+														
+														%>
+														 <span class="label label-success"><i class="icon-ok">已通过</i></span>
+														 <%
+														
+														}
+														
+														
+														
+														else{ %> 
 														<a href="project1.do?method=insert1131&&id=<%=project1.getPid().toString()%>"
 															onclick="return yesno1()"><button class="btn btn-success btn-xs"><i class="icon-ok ">通过</i></button></a>
 														<a href="project1.do?method=insert1132&&id=<%=project1.getPid().toString()%>"

@@ -55,7 +55,7 @@ public class UserDAO {
 			tx.begin();
 			// 查询数据库的用户和密码，权限
 			Query query = session
-					.createQuery("from Keyanuser where username=? and password=? and userclasify=? and checked='1'");
+					.createQuery("from Keyanuser where username=? and password=? and userclasify=?");
 			query.setString(0, username);
 			query.setString(1, password);
 			query.setString(2, userType);
@@ -247,6 +247,7 @@ public class UserDAO {
 	}
 
 	public void insert(Keyanuser user) {
+		System.out.println("----3----");
 		Session session = null;
 		Transaction tx = null;
 
@@ -606,6 +607,33 @@ public class UserDAO {
 			}
 			// throw e;
 			return false;
+
+		} finally {
+			HibernateSessionFactory.closeSession();
+		}
+	}
+	//系统管理员审核注册用户
+	public boolean shenhe(Integer id) {
+		Session session = null;
+		Transaction tx = null;
+		Keyanuser user = null;
+		List list = new ArrayList();
+		try {
+			session = HibernateSessionFactory.getSession();
+			tx = session.beginTransaction();
+			tx.begin();
+			user = (Keyanuser) session.get(Keyanuser.class, id);
+			user.setChecked("1");
+			session.saveOrUpdate(user);
+			tx.commit();
+			return true;
+		} catch (HibernateException e) {
+			if (tx != null) {
+				tx.rollback();
+			}
+			// throw e;
+			return false;
+
 
 		} finally {
 			HibernateSessionFactory.closeSession();

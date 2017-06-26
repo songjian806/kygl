@@ -205,6 +205,7 @@ public class Project1Action extends Action {
 				}
 			} else {
 				list6 = project1Dao.findall112(userclasify, userdept, username);
+				
 			}
 
 			for (int i = 0; i < list6.size(); i++) {
@@ -947,7 +948,7 @@ public class Project1Action extends Action {
 			Project1Dao project1Dao = new Project1Dao();
 			project1 = project1Dao.queryId(new Integer(id));
 			if (keyanuser.getUserclasify().equals("0")) {
-				project1.setPstatus("终止");
+				project1.setPstatus("中检");
 			} else if (keyanuser.getUserclasify().equals("1")) {
 				project1.setPstate3("立项11");
 			} else if (keyanuser.getUserclasify().equals("2")) {
@@ -1050,13 +1051,16 @@ public class Project1Action extends Action {
 			project1 = project1Dao.queryId(new Integer(id));
 
 			if (keyanuser.getUserclasify().equals("2")) {
-				project1.setPstate3("校审通过");
-				project1.setPstatus("终止");
+				project1.setPstate3("延期22");
+				//project1.setPstatus("终止");
 			}
 			if (keyanuser.getUserclasify().equals("1")) {
-				project1.setPstate3("系审通过");
-				project1.setPstatus("终止");
+				
+				project1.setPstate3("延期11");
+				System.out.println("----------kmmp-p----------");
+				//project1.setPstatus("终止");
 			}
+			project1Dao.update1(project1);
 
 			return new ActionForward("/project1.do?method=query114");
 		} else if (method.equals("insert1151"))// 终止审批通过

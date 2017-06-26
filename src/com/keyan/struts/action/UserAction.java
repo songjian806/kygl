@@ -71,10 +71,15 @@ public class UserAction extends Action {
 
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
-		if (request.getSession().getAttribute("keyanuser") == null) {
+		
+if (request.getSession().getAttribute("keyanuser") == null) {
+	
+	
 			return mapping.findForward("logout");
-		}
-		UserForm UserForm = (UserForm) form;// TODO Auto-generated method stub
+}
+	
+
+UserForm UserForm = (UserForm) form;// TODO Auto-generated method stub
 
 		String method = (String) request.getParameter("method");
 		ActionErrors errors = new ActionErrors();
@@ -89,7 +94,9 @@ public class UserAction extends Action {
 		Keyanuser kuser = (Keyanuser) request.getSession().getAttribute(
 				"keyanuser");
 		ThesisDao thesisDao = new ThesisDao();
-		if (method.equals("query")) {
+
+		
+if (method.equals("query")) {
 			if (kuser.getUserclasify().equals("3")) {
 				try {
 
@@ -105,8 +112,11 @@ public class UserAction extends Action {
 			} else {
 				return mapping.findForward("fail1");
 			}
-		}
-		if (method.equals("query00")) {
+}
+
+
+
+if (method.equals("query00")) {
 			String id = (String) request.getParameter("id");
 			try {
 
@@ -136,9 +146,10 @@ public class UserAction extends Action {
 			} catch (Exception e) {
 				return mapping.findForward("fail1");
 			}
-		}
+}
 
-		else if (method.equals("updatepassword")) {
+		
+else if (method.equals("updatepassword")) {
 
 			try {
 
@@ -152,11 +163,16 @@ public class UserAction extends Action {
 			} catch (Exception e) {
 				return mapping.findForward("fail1");
 			}
-		}
-		if (method.equals("adduser")) {
+}
+
+
+if (method.equals("adduser")) {
 
 			return mapping.findForward("adduser");
-		} else if (method.equals("updatepassword2")) {
+} 
+
+
+else if (method.equals("updatepassword2")) {
 			{
 				try {
 					String url = null;
@@ -186,7 +202,10 @@ public class UserAction extends Action {
 				}
 			}
 
-		} else if (method.equals("updatepassword1")) {
+} 
+
+
+else if (method.equals("updatepassword1")) {
 
 			{
 				try {
@@ -207,8 +226,34 @@ public class UserAction extends Action {
 				}
 			}
 
-		} else if (method.equals("insert")) {
+} 
+//管理员审核注册人员功能
+else if(method.equals("shenhe")){
+	System.out.println("shenhe=================");
+	try {
+		String url=null;
+		boolean f = false;
+		userDAO.shenhe(new Integer(UserForm.getId()));
+//		if(f)
+		
+		
+		url = "user.do?method=query";
+		forward = new ActionForward(url);
+		forward.setPath(url);
+		forward.setRedirect(true);
+
+
+		return forward;
+
+
+	} catch (Exception e) {
+		return mapping.findForward("fail1");
+	}
+}
+
+else if (method.equals("insert")) {
 			try {
+				
 				String url = null;
 				String jmpassword = MD5Password(UserForm.getPassword());
 				user.setUsername(UserForm.getUsername());
@@ -284,7 +329,10 @@ public class UserAction extends Action {
 			} catch (Exception e) {
 				return mapping.findForward("fail1");
 			}
-		} else if (method.equals("detele")) {
+		} 
+
+
+else if (method.equals("detele")) {
 			try {
 				String url = null;
 				String id = request.getParameter("id");

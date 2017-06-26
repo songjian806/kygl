@@ -36,9 +36,10 @@
 
     <style>
         body{
-            background: url("Image/beijing.jpg") no-repeat scroll center top  ;
+            background-image: url('Image/beijing.jpg');
+        	background-size: 100%;
+        	background-repeat:no-repeat;
         }
-
     </style>
 
 </head>
@@ -49,8 +50,6 @@
     <br><br><br><br><br><br><br>
     <form class="form-signin" action="login.do" method="post">
         <table>
-
-
             <div class="login-wrap">
                 <div class="form-group">
 
@@ -76,7 +75,7 @@
                 </div>
 				<div class="registration">
                 	还没有账户?
-                <a class="" href="registration.jsp">
+                <a class="" href="register.jsp">
                                                   创建一个账户
                 </a>
             </div>
@@ -84,18 +83,13 @@
         </table>
 
         <%
-
             if (s1 != null) {
                 getServletContext().removeAttribute("info1");
                 out.print("<font color='red'>" + s1 + "</font>");
             }
         %>
-
     </form>
-
 </div>
-
-
 </body>
 
 <script src="js/jquery.js"></script>

@@ -435,7 +435,6 @@ return true;
                                               <input class="form-control "  name="addr" />
                                           </div>
                                       </div>
-                                      <input type="hidden" name="checked" value="1"/>
                                       <div class="form-group">
                                           <div class="col-lg-offset-5 col-lg-7">
                                               <button class="btn btn-danger" type="submit">保存</button>

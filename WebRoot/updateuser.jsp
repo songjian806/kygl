@@ -304,13 +304,13 @@ level=keyanuser.getLevel();
                                   <div class="form-group">
                                       <label  class="col-lg-2 control-label">用户名</label>
                                       <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="f-name" readonly ="true" value="<%=keyanuser1.getUsername() %>">
+                                          <input type="text" class="form-control" id="f-name"  value="<%=keyanuser1.getUsername() %>">
                                       </div>
                                   </div>
                                   <div class="form-group">
                                       <label  class="col-lg-2 control-label">姓名</label>
                                       <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="l-name" readonly="true"  value="<%=keyanuser1.getName() %>">
+                                          <input type="text" class="form-control" id="l-name"   value="<%=keyanuser1.getName() %>">
                                       </div>
                                   </div>
                                   
@@ -329,13 +329,13 @@ level=keyanuser.getLevel();
                                   <div class="form-group">
                                       <label  class="col-lg-2 control-label">所在单位</label>
                                       <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="c-name" readonly="true" placeholder=" <%=keyanuser1.getUserdept() %>">
+                                          <input type="text" class="form-control" id="c-name"  placeholder=" <%=keyanuser1.getUserdept() %>">
                                       </div>
                                   </div>
                                   <div class="form-group">
                                       <label  class="col-lg-2 control-label">角色</label>
                                       <div class="col-lg-6">
-                                          <input type="text" class="form-control" id="b-day" readonly="true" placeholder="<%=keyanuser1.getLevel() %>">
+                                          <input type="text" class="form-control" id="b-day"  placeholder="<%=keyanuser1.getLevel() %>">
                                       </div>
                                   </div>
                                   <div class="form-group">

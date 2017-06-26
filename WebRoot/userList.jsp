@@ -409,6 +409,12 @@ function yzName()
                                   <td align="center">
                                       <button class="btn btn-danger btn-xs" onclick="javascript:window.location.href='user.do?method=detele&&id=<%=keyanuser.getId().toString() %>'"><i class="icon-trash">删除</i></button>
                                       <button class="btn btn-success btn-xs" onclick="javascript:window.location.href='user.do?method=query1&&id=<%=keyanuser.getId().toString() %>'"><i class="icon-pencil ">修改</i></button>
+                                      <%if(keyanuser.getChecked().equals("0")){ %>
+                                     <button class="btn btn-success btn-xs" onclick="javascript:window.location.href='user.do?method=shenhe&&id=<%=keyanuser.getId().toString() %>'"><i class="icon-ok"></i>审核</button>
+                                      <%}else {%>
+                                      <button class="btn btn-default btn-xs"><i class="icon-ok"></i>审核</button>
+                                      <%} %>
+                                      
                                   </td>
                              </tr>
                             <% } }%>

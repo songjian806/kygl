@@ -310,14 +310,10 @@
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub">
-
                         <li><a class="" href="user.do?method=query00&&id=<%=keyanuser.getId().toString() %>">个人信息查看</a>
                         </li>
-
-
                     </ul>
                 </li>
-
             </ul>
             <!-- sidebar menu end-->
         </div>
@@ -326,7 +322,6 @@
     </aside>
     <section id="main-content">
         <section class="wrapper">
-
             <div class="row">
                 <div class="col-lg-12">
                     <!--breadcrumbs start -->
@@ -335,7 +330,6 @@
                         <li><a href="#">经费管理</a></li>
                         <li><a href="mode.jsp"> 经费管理</a></li>
                         <li class="active">添加经费</li>
-
                     </ul>
                     <!--breadcrumbs end -->
                 </div>
@@ -347,17 +341,14 @@
                         <header class="panel-heading"><strong> 添加经费申请</strong></header>
                         <div class="panel-body">
                             <div class=" form">
-
                                 <form class="cmxform form-horizontal tasi-form" action="mode.do?method=insert"
                                       method="post" enctype="multipart/form-data" onsubmit="return onsubmit1()">
-
                                     <div class="form-group ">
                                         <label for="inputEmail1" class="col-lg-2 control-label">负责人</label>
                                         <div class="col-lg-3">
                                             <input type="text" class="form-control" value="<%=name %>" name="jf_name"
                                                    readonly="true">
                                         </div>
-
                                         <label class="col-lg-2 control-label col-lg-offset-1">负责人学工号</label>
                                         <div class="col-lg-3">
                                             <input type="text" class="form-control"
@@ -384,7 +375,6 @@
                                                 <option value="数计学院">数计学院</option>
                                                 <option value="校领导">校领导</option>
                                                 <option value="会计学院">会计学院</option>
-
                                             </select>
                                         </div>
 
@@ -416,24 +406,19 @@
                                             </select>
                                         </div>
                                     </div>
-
-
                                     <div class="form-group ">
                                         <div class="col-lg-offset-5 col-lg-7">
                                             <button type="submit" class="btn btn-success">添加</button>
                                             <button type="reset" class="btn btn-default">重置</button>
                                         </div>
                                     </div>
-
                                 </form>
                             </div>
                         </div>
                     </section>
                 </div>
             </div>
-
         </section>
-
     </section>
 </section>
 
@@ -443,13 +428,9 @@
 <script src="js/jquery.scrollTo.min.js"></script>
 <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-
-
 <!--common script for all pages-->
 <script src="js/common-scripts.js"></script>
-
 <!--script for this page-->
 <script src="js/form-validation-script.js"></script>
 </body>
 </html>
-

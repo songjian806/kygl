@@ -400,7 +400,24 @@ window.open("chyuan.html","_blank","fullscreen=0,toolbar=0,location=0,menubar=0,
                                   <td align="center"><%=project1.getPcontrol() %></td>
 				  <td align="center"><%=project1.getUsernum() %></td>
                                   <td align="center">
-                                  <% if(project1.getPstate3().equals("延期1")){
+                                  <% 
+                     if(keyanuser.getUserclasify().equals("1"))
+         { 
+                     if(project1.getPstate3().equals("延期1")){
+          out.print("系审通过");
+       }else if(project1.getPstate3().equals("延期2")){
+          out.print("系审通过");
+       }else if(project1.getPstate3().equals("延期22")){
+          out.print("系审通过");}
+          else if(project1.getPstate3().equals("延期11")){
+          out.print("系审不通过");}
+                  else {out.print("未审核");
+                     }          
+                         } else if(keyanuser.getUserclasify().equals("2")){
+                     
+                     
+                     
+                     if(project1.getPstate3().equals("延期1")){
           out.print("系审通过");
        }else if(project1.getPstate3().equals("延期2")){
           out.print("校审通过");
@@ -408,7 +425,24 @@ window.open("chyuan.html","_blank","fullscreen=0,toolbar=0,location=0,menubar=0,
           out.print("校审不通过");}
           else if(project1.getPstate3().equals("延期11")){
           out.print("系审不通过");}
-        else {out.print("未审核");}%></td>
+                     
+              else {out.print("未审核");
+                     }          
+                             
+                     }  else{  if(project1.getPstate3().equals("延期1")){
+          out.print("系审通过");
+       }else if(project1.getPstate3().equals("延期2")){
+          out.print("校审通过");
+       }else if(project1.getPstate3().equals("延期22")){
+          out.print("校审不通过");}
+          else if(project1.getPstate3().equals("延期11")){
+          out.print("系审不通过");}
+        else {out.print("未审核");
+                     }          
+                                  
+                                  
+                                  
+                                }%></td>
                                   
                                   <td align="center"><%
 															if(project1.getPadjuct()!=null)
@@ -445,12 +479,22 @@ window.open("chyuan.html","_blank","fullscreen=0,toolbar=0,location=0,menubar=0,
                                   	<%if(keyanuser.getUserclasify().equals("1")) {
 														 if(project1.getPstate3().equals("延期2")||project1.getPstate3().equals("延期1")){%>
 														 <span class="label label-success"><i class="icon-ok">已通过</i></span><%}
+														 
+														 else if(project1.getPstate3().equals("延期22")){ 
+														 %>
+														 <span class="label label-success"><i class="icon-ok">已通过</i></span><%
+														 }
+														 
 														 else {
 														%>	
 														<a href="project1.do?method=insert1141&&id=<%=project1.getPid().toString()%>"
-															onclick="return yesno1()"><button class="btn btn-success btn-xs"><i class="icon-ok">通过</i></button></a>
+															onclick="return yesno1()"><button class="btn btn-success btn-xs">
+															<i class="icon-ok">通过</i></button>
+														</a>
 														<a href="project1.do?method=insert1142&&id=<%=project1.getPid().toString()%>"
-															onclick="return yesno1()"><button class="btn btn-danger btn-xs"><i class="icon-remove">不通过</i></button></a>	
+															onclick="return yesno1()">
+															<button class="btn btn-danger btn-xs"><i class="icon-remove">不通过</i></button>
+															</a>	
 														<%} }
 														if(keyanuser.getUserclasify().equals("2")){
 														if(project1.getPstate3().equals("延期2")) {%>

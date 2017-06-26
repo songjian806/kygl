@@ -3,6 +3,7 @@ package com.keyan.struts.form;
 
 
 import javax.servlet.http.HttpServletRequest;
+
 import org.apache.struts.action.ActionErrors;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
@@ -34,10 +35,19 @@ public class UserForm extends ActionForm {
 	private String postnum;
 	private String tel;
 	private String addr;
+	private String checked;
 
 	/*
 	 * Generated Methods
 	 */
+
+	public String getChecked() {
+		return checked;
+	}
+
+	public void setChecked(String checked) {
+		this.checked = checked;
+	}
 
 	public String getId() {
 		return id;

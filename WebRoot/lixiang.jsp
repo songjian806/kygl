@@ -415,7 +415,36 @@ window.open("chyuan.html","_blank","fullscreen=0,toolbar=0,location=0,menubar=0,
                                   <td align="center">
                                   
                                   	<%
-                                   if(project1.getPstate3().equals("立项1"))
+                               if(keyanuser.getUserclasify().equals("1")){
+                                  	
+                                  	if(project1.getPstate3().equals("立项1"))
+                                   {out.print("系审通过");}
+                                    else if(project1.getPstate3().equals("立项11"))
+                                   {out.print("系审不通过");}
+                                  	
+                                    else if(project1.getPstate3().equals("立项2"))
+                                   {out.print("系审通过");}
+                                  
+                                    else if(project1.getPstate3().equals("立项22"))
+                                   {out.print("系审通过");}else{
+                                   
+                                   out.print("未审核");
+                                   
+                                   }
+                                  	}
+                                  	
+                                  	else if(keyanuser.getUserclasify().equals("2")){
+                                  	 if(project1.getPstate3().equals("立项1"))
+                                   {out.print("系审通过");}
+                                   else if(project1.getPstate3().equals("立项2"))
+                                   {out.print("校审通过");}
+                                  else if(project1.getPstate3().equals("立项22"))
+                                   {out.print("校审不通过");}
+                                   else{  out.print("未审核");
+                                   }}
+                                   else if(keyanuser.getUserclasify().equals("0")){
+                                   
+                                    if(project1.getPstate3().equals("立项1"))
                                    {out.print("系审通过");}
                                    else if(project1.getPstate3().equals("立项2"))
                                    {out.print("校审通过");}
@@ -423,9 +452,14 @@ window.open("chyuan.html","_blank","fullscreen=0,toolbar=0,location=0,menubar=0,
                                    {out.print("系审不通过");}
                                   else if(project1.getPstate3().equals("立项22"))
                                    {out.print("校审不通过");}
-                                  else {%>
+                                   
+                                   else {%>
                                   <%=project1.getPstate3() %>
-                                  <%} %>
+                                  <%}
+                                   
+                                   }
+                                  
+                                   %>
                                   
                                   </td>
                                   <td align="center">
@@ -494,6 +528,8 @@ window.open("chyuan.html","_blank","fullscreen=0,toolbar=0,location=0,menubar=0,
 															
 															<%}
 															 else if(project1.getPstate3().equals("立项2")){%>
+															  <span class="label label-success "><i class="icon-ok">已通过</i></span>
+															<%} else if(project1.getPstate3().equals("立项22")){%>
 															  <span class="label label-success "><i class="icon-ok">已通过</i></span>
 															<%}
 															else{%> 

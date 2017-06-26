@@ -2,7 +2,6 @@
 <%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%> 
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <jsp:useBean id="JSONRPCBridge" scope="session" class="com.metaparadigm.jsonrpc.JSONRPCBridge"/>
-
 <jsp:useBean id="ajax" class="com.keyan.ajax.servlet.AjaxBean"></jsp:useBean>
 
 <%
@@ -34,15 +33,13 @@ level=keyanuser.getLevel();
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-colorpicker/css/colorpicker.css" />
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker.css" />
-
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
-	
+    	
 	<script type="text/javascript">
 jsonrpc = new JSONRpcClient("JSON-RPC");
 
@@ -110,7 +107,6 @@ return true;
   </head>
 
   <body>
-
   <section id="container" class="">
       <!--header start-->
       <%@ include file="top.jsp" %>
@@ -189,8 +185,6 @@ return true;
                           <%if (keyanuser.getUserclasify().equals("0")) { %>
                           <li><a class="" href="zhuanli.do?method=query31">专利管理</a></li>
                           <%} %>
-
-
                       </ul>
                   </li>
                   <li class="sub-menu">
@@ -200,18 +194,14 @@ return true;
                           <span class="arrow"></span>
                       </a>
                       <ul class="sub">
-
                           <li><a class="" href="geSearch.do?method=query">个人业绩查询</a></li>
-
                           <li><a class="" href="geSearch.do?method=queryThree">近三年业绩查询</a></li>
-
                           <%if (keyanuser.getUserclasify().equals("1")) { %>
                           <li><a class="" href="geSearch.do?method=yuanxichaxun">院系业绩查询</a></li>
                           <%} %>
                           <%if (keyanuser.getUserclasify().equals("2")) { %>
                           <li><a class="" href="geSearch.do?method=yuanxichaxun1">院系业绩查询</a></li>
                           <%} %>
-
                       </ul>
                   </li>
 
@@ -241,17 +231,11 @@ return true;
                           <span class="arrow"></span>
                       </a>
                       <ul class="sub">
-
-
                           <%if (keyanuser.getUserclasify().equals("0")) { %>
                           <li><a class="" href="info.do?method=query1">消息管理</a></li>
                           <%} %>
-
-
                           <li><a class="" href="gg.do?method=query">公告管理</a></li>
-
                           <li><a class="" href="http://tlxyxb.tlu.edu.cn/">科研动态</a></li>
-
                       </ul>
                   </li>
                   <li class="sub-menu">
@@ -274,18 +258,14 @@ return true;
                       <ul class="sub">
                           <li><a class="" href="user.do?method=query00&&id=<%=keyanuser.getId().toString() %>">个人信息查看</a>
                           </li>
-
-
                       </ul>
                   </li>
               </ul>
               <!-- sidebar menu end-->
           </div>
           <%} %>
-
           <!--   系统管理员侧边栏 -->
           <%if (keyanuser.getUserclasify().equals("3")) { %>
-
           <div id="sidebar" class="nav-collapse ">
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">
@@ -299,10 +279,8 @@ return true;
                           <li><a class="" href="user.do?method=query">用户信息</a></li>
                           <li><a class="" href="adduser.jsp">添加用户</a></li>
                           <li><a class="" href="user.do?method=updatepassword">修改密码</a></li>
-
                       </ul>
                   </li>
-
                   <li class="sub-menu">
                       <a href="javascript:;" class="">
                           <i class="icon-envelope"></i>
@@ -314,8 +292,6 @@ return true;
                           <li><a class="" href="rules.jsp">规章制度</a></li>
                       </ul>
                   </li>
-
-
                   <li class="sub-menu">
                       <a href="javascript:;" class="">
                           <i class="icon-tasks"></i>
@@ -323,14 +299,10 @@ return true;
                           <span class="arrow"></span>
                       </a>
                       <ul class="sub">
-
                           <li><a class="" href="user.do?method=query00&&id=<%=keyanuser.getId().toString() %>">个人信息查看</a>
                           </li>
-
-
                       </ul>
                   </li>
-
               </ul>
               <!-- sidebar menu end-->
           </div>
@@ -421,28 +393,21 @@ return true;
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-
     <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
-
     <!--custom switch-->
     <script src="js/bootstrap-switch.js"></script>
     <!--custom tagsinput-->
     <script src="js/jquery.tagsinput.js"></script>
     <!--custom checkbox & radio-->
     <script type="text/javascript" src="js/ga.js"></script>
-
     <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="assets/bootstrap-daterangepicker/date.js"></script>
     <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script type="text/javascript" src="assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
     <script type="text/javascript" src="assets/ckeditor/ckeditor.js"></script>
-
-
-  <!--common script for all pages-->
+    <!--common script for all pages-->
     <script src="js/common-scripts.js"></script>
-
-  <!--script for this page-->
-  <script src="js/form-component.js"></script>
-
+    <!--script for this page-->
+    <script src="js/form-component.js"></script>
   </body>
 </html>

@@ -13,7 +13,6 @@
     String name=null;
     String level=null;
     Keyanuser keyanuser=(Keyanuser)session.getAttribute("keyanuser");
-
     name=keyanuser.getName();
     level=keyanuser.getLevel();
 %>
@@ -68,9 +67,7 @@
     <meta name="author" content="Mosaddek">
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="new/img/favicon.html">
-
     <title>科研管理系统</title>
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
@@ -79,11 +76,9 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
-
 </head>
 
 <body>
-
 <section id="container" class="">
     <!--header start-->
     <%@ include file="top.jsp" %>
@@ -97,12 +92,11 @@
     <section id="main-content">
         <section class="wrapper">
             <!-- page start-->
-
             <div class="row">
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            新增成员基本信息
+                           	 新增成员基本信息
                         </header>
                         <div class="panel-body">
                             <div class=" form">
@@ -113,8 +107,6 @@
                                             <%String  pid=(String)getServletContext().getAttribute("pid1"); %>
                                             <input class=" form-control"   name="pid" value="<%=pid %>" minlength="2" type="text" required  readonly="true"/>
                                         </div>
-
-
                                         <label for="cemail" class="control-label col-lg-2 col-lg-offset-1">教工号</label>
                                         <div class="col-lg-3">
                                             <input class="form-control "  name="ppusernum" required />
@@ -137,10 +129,7 @@
                                             </select>
                                         </div>
                                     </div>
-
-
                                     <div class="form-group ">
-
                                         <label for="ccomment" class="control-label col-lg-2">所在单位</label>
                                         <div class="col-lg-3">
                                             <input class="form-control " name="ppdept" />
@@ -150,16 +139,12 @@
                                             <input class="form-control "  name="ppwork" />
                                         </div>
                                     </div>
-
                                     <div class="form-group ">
-
                                         <label for="ccomment" class="control-label col-lg-2">署名顺序</label>
                                         <div class="col-lg-3">
                                             <input class="form-control "  name="ppnum" />
                                         </div>
                                     </div>
-
-
                                     <div class="form-group">
                                         <div class="col-lg-offset-5 col-lg-7">
                                             <button class="btn btn-danger" type="submit">添加</button>
@@ -169,12 +154,10 @@
                                     </div>
                                 </form>
                             </div>
-
                         </div>
                     </section>
                 </div>
             </div>
-
             <!-- page end-->
         </section>
     </section>
@@ -187,8 +170,6 @@
 <script src="js/jquery.scrollTo.min.js"></script>
 <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-
-
 <!--common script for all pages-->
 <script src="js/common-scripts.js"></script>
 <!--script for this page-->
